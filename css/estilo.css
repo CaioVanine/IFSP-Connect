@@ -9,13 +9,9 @@ body {
     background-color: green;
     display: flex;
     flex-direction: column;
-    /* Coloca os itens um embaixo do outro */
     align-items: center;
-    /* Centraliza os itens horizontalmente */
     justify-content: center;
-    /* Centraliza os itens verticalmente (opcional) */
     min-height: 100vh;
-    /* Garante que o body ocupe toda a altura da tela (opcional) */
     margin: 0;
 }
 
