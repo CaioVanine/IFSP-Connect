@@ -145,3 +145,11 @@ footer {
         flex-direction: column;
     }
 }
+
+.logo{
+    display:flex;
+}
+
+.logo h1{
+    margin-top: 25px;
+}
