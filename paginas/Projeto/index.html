@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="imagens/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/script.js" defer></script>
     <title>Sensor de Iluminância</title>
 </head>
 
@@ -109,11 +110,14 @@
     </section>
     <hr>
 
+    <!--Integração-->
+
     <section class="ldr" id="monitoramento">
         <div class="bloco-monitoramento">
-            <p>Estado: <span class="estado"></span></p>
-            <p>Medição: <span class="medicao"></span></p>
-            <p>Resistor utilizado: <span class="resistor"></span></p>
+            <p>Estado: <span id="estado"></span></p>
+            <p>Medição: <span id="iluminancia"></span></p>
+            <p>Resistor utilizado: <span id="resistor"></span></p>
+            <button id="conectarArduino">Conectar ao Arduino</button>
 
         </div>
     </section>
