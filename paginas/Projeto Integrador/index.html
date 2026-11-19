@@ -116,9 +116,11 @@
         <div class="bloco-monitoramento">
             <p>Estado: <span id="estado"></span></p>
             <p>Medição: <span id="iluminancia"></span></p>
+            <p>Valor médio: <span id="mediaLDR"></span></p>
             <p>Resistor utilizado: <span id="resistor"></span></p>
-            <button id="conectarArduino">Conectar ao Arduino</button>
-
+            <button id="conectarArduino">Conectar ao Arduino</button><br>
+            <button id="calibrar" disabled>Calibrar para a sala</button><br>
+            <input type="range" id="slider" min="0" max="0" value="0" disabled>
         </div>
     </section>
 
