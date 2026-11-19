@@ -5,6 +5,9 @@ const estado = document.getElementById("estado");
 const mediaLDR = document.getElementById("mediaLDR");
 const calibrar = document.getElementById("calibrar");
 const slider  = document.getElementById("slider");
+const valorMin = document.getElementById("valorMinimo");
+const valorMax = document.getElementById("valorMaximo");
+const valorCalibrado = document.getElementById("valorCalibrado");
 let porta;
 let valorMinimo = 0.0;
 let valorMaximo = 0.0;
@@ -124,6 +127,11 @@ calibrar.addEventListener("click", () => {
     slider.disabled = false;
     slider.min = valorMinimo;
     slider.max = valorMaximo;
+
+    valorMin.textContent = valorMinimo.toFixed(2);
+    valorMax.textContent = valorMaximo.toFixed(2);
+    valorCalibrado.textContent = mediaIluminancia.toFixed(2);
+    
     slider.value = mediaIluminancia.toFixed(2);
 });
 

@@ -379,3 +379,29 @@ body {
     pointer-events: none;
     transition: all 0.3s ease-in-out;
 }
+
+.bloco-monitoramento{
+    width: auto;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #213241;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.bloco-monitoramento button{
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bloco-monitoramento button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);/
+}
